@@ -1,0 +1,14 @@
+stages:
+  - test
+
+robot_tests:
+  stage: test
+  image: python:3.10
+  before_script:
+    - pip install robotframework robotframework-seleniumlibrary
+  script:
+    - robot tests/
+  artifacts:
+    when: always
+    paths:
+      - results/
