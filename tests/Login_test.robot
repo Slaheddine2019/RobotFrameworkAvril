@@ -15,7 +15,7 @@ ${Invalid_Password}  244
 *** Test Cases ***
 
 
-Login avec valid cridentiels
+Login avec valid cridentiels 1
     [Documentation]    ce cas de test permet de se connecter au site avec
     ...  un username et mot de passe valides
     [Tags]    login
