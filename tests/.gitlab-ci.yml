@@ -1,0 +1,14 @@
+stages:
+  - test
+
+robot_tests:
+  stage: test
+  image: python:3.10
+  script:
+    - pip install robotframework
+    - robot tests
+  artifacts:
+    paths:
+      - output.xml
+      - log.html
+      - report.html
